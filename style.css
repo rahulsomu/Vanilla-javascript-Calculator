@@ -37,7 +37,7 @@ body {
 .theme {
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.199);
+  background-color: #0000000c;
   transition: 0.2s ease;
   transform: rotate(-30deg) translate(-110px, -220px);
 
@@ -182,28 +182,7 @@ button {
   box-shadow: 0px 2px 5px 2px rgba(34, 34, 34, 0.205);
   transition: 0.2s;
 }
-/* button::before{
-    content: '';
-    border-radius: 50px;
-    width: 5rem;
-    height: 5rem;
-   
-    background: #f6f7f82f;
-    position: absolute;
-   top: 0;
-   transform: translate(100% ,-50%);
-    left: 50%;
 
-
-    transition: .5s;
-}
-button:hover::before{
-    transform: translateY(0);
-} */
-/* button:hover {
-  background: #f6f7f8da;
-  color: #011627;
-} */
 .botton-rectangle {
   width: 20%;
   border-radius: 20px;
@@ -239,6 +218,10 @@ button:hover::before{
   background-color: #f6f7f8;
   color: #2ec4b6;
 }
+.light-theme-lower{
+  background-color: #f6f7f8;
+  color: #2ec4b6;
+}
 .light-theme-button-number {
   background-color: #f6f7f8;
   color: #2ec4b6;
@@ -251,6 +234,12 @@ button:hover::before{
 .dark-theme {
   background-color: #011627;
   color: #2ec4b6;
+}
+
+.dark-theme-lower{
+  background-color: #011627;
+  color: #2ec4b6;
+
 }
 .dark-theme-button-number {
   background-color: #ffffff10;
@@ -269,7 +258,7 @@ button:hover::before{
   color: #011627;
 }
 .pastel-theme-lower {
-  background: #8fa998;
+  background: #058C42;
 }
 .pastel-theme-button-number {
   background: rgba(255, 255, 255, 0.041);
@@ -281,7 +270,7 @@ button:hover::before{
   background: rgba(255, 255, 255, 0.034);
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
-  color: #ff3366;
+  color: #fff;
 }
 
 .bright-theme {
@@ -326,9 +315,9 @@ button:hover::before{
   .theme2,
   .theme3,
   .theme4 {
-    height: 2.8rem;
-    margin: 5px;
-    width: 2.8rem;
+    height: 2.4rem;
+    margin: 0 8px;
+    width: 2.5rem;
 
     display: flex;
     align-items: center;

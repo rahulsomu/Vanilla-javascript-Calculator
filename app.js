@@ -15,9 +15,6 @@ const container = document.querySelector('.container');
 const lower = document.querySelector('.lower');
 const themeBtn = document.querySelector('.theme-btn');
 
-
-
-
 let currentArray = '';
 let array = '';
 
@@ -125,82 +122,245 @@ dot.addEventListener('click', () => {
   current.textContent = array;
 });
 
-close.addEventListener('click',()=>{
+close.addEventListener('click', () => {
   theme.classList.toggle('close-transform');
   themeBtn.classList.toggle('hide');
+});
 
-})
+theme1.addEventListener('click', () => {
+  clear.classList.toggle('light-theme-button-operator');
+  reset.classList.toggle('light-theme-button-operator');
+  negative.classList.toggle('light-theme-button-number');
+  dot.classList.toggle('light-theme-button-number');
 
-theme1.addEventListener('click',()=>{
-  clear.classList.toggle('light-theme')
-  reset.classList.toggle('light-theme')
-  negative.classList.toggle('light-theme')
-  reset.classList.toggle('light-theme')
-  dot.classList.toggle('light-theme')
+  container.classList.toggle('light-theme');
+  lower.classList.toggle('light-theme-lower');
+  number.forEach(num => {
+    num.classList.toggle('light-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.toggle('light-theme-button-operator');
+  });
+
+  clear.classList.remove('pastel-theme-button-operator');
+  reset.classList.remove('pastel-theme-button-operator');
+  negative.classList.remove('pastel-theme-button-number');
+  dot.classList.remove('pastel-theme-button-number');
+
+  container.classList.remove('pastel-theme');
+  lower.classList.remove('pastel-theme-lower');
+  number.forEach(num => {
+    num.classList.remove('pastel-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.remove('pastel-theme-button-operator');
+  });
+
+  clear.classList.remove('bright-theme-button-operator');
+  reset.classList.remove('bright-theme-button-operator');
+  negative.classList.remove('bright-theme-button-number');
+  dot.classList.remove('bright-theme-button-number');
+
+  container.classList.remove('bright-theme');
+  lower.classList.remove('bright-theme-lower');
+  number.forEach(num => {
+    num.classList.remove('bright-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.remove('bright-theme-button-operator');
+  });
+
+  clear.classList.remove('dark-theme-button-operator');
+  reset.classList.remove('dark-theme-button-operator');
+  negative.classList.remove('dark-theme-button-number');
+  dot.classList.remove('dark-theme-button-number');
+
+  container.classList.remove('dark-theme');
+  lower.classList.remove('dark-theme-lower');
+  number.forEach(num => {
+    num.classList.remove('dark-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.remove('dark-theme-button-operator');
+  });
+
+});
+
+theme2.addEventListener('click', () => {
+  clear.classList.toggle('dark-theme-button-operator');
+  reset.classList.toggle('dark-theme-button-operator');
+  negative.classList.toggle('dark-theme-button-number');
+  dot.classList.toggle('dark-theme-button-number');
+
+  container.classList.toggle('dark-theme');
+  lower.classList.toggle('dark-theme-lower');
+  number.forEach(num => {
+    num.classList.toggle('dark-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.toggle('dark-theme-button-operator');
+  });
+
+  clear.classList.remove('pastel-theme-button-operator');
+  reset.classList.remove('pastel-theme-button-operator');
+  negative.classList.remove('pastel-theme-button-number');
+  dot.classList.remove('pastel-theme-button-number');
+
+  container.classList.remove('pastel-theme');
+  lower.classList.remove('pastel-theme-lower');
+  number.forEach(num => {
+    num.classList.remove('pastel-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.remove('pastel-theme-button-operator');
+  });
+
+  clear.classList.remove('light-theme-button-operator');
+  reset.classList.remove('light-theme-button-operator');
+  negative.classList.remove('light-theme-button-number');
+  dot.classList.remove('light-theme-button-number');
+
+  container.classList.remove('light-theme');
+  lower.classList.remove('light-theme-lower');
+  number.forEach(num => {
+    num.classList.remove('light-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.remove('light-theme-button-operator');
+  });
+
+  clear.classList.remove('bright-theme-button-operator');
+  reset.classList.remove('bright-theme-button-operator');
+  negative.classList.remove('bright-theme-button-number');
+  dot.classList.remove('bright-theme-button-number');
+
+  container.classList.remove('bright-theme');
+  lower.classList.remove('bright-theme-lower');
+  number.forEach(num => {
+    num.classList.remove('bright-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.remove('bright-theme-button-operator');
+  });
+
+});
+
+theme3.addEventListener('click', () => {
+  clear.classList.toggle('pastel-theme-button-operator');
+  reset.classList.toggle('pastel-theme-button-operator');
+  negative.classList.toggle('pastel-theme-button-number');
+  dot.classList.toggle('pastel-theme-button-number');
+
+  container.classList.toggle('pastel-theme');
+  lower.classList.toggle('pastel-theme-lower');
+  number.forEach(num => {
+    num.classList.toggle('pastel-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.toggle('pastel-theme-button-operator');
+  });
+
+  clear.classList.remove('bright-theme-button-operator');
+  reset.classList.remove('bright-theme-button-operator');
+  negative.classList.remove('bright-theme-button-number');
+  dot.classList.remove('bright-theme-button-number');
+
+  container.classList.remove('bright-theme');
+  lower.classList.remove('bright-theme-lower');
+  number.forEach(num => {
+    num.classList.remove('bright-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.remove('bright-theme-button-operator');
+  });
+
+  clear.classList.remove('light-theme-button-operator');
+  reset.classList.remove('light-theme-button-operator');
+  negative.classList.remove('light-theme-button-number');
+  dot.classList.remove('light-theme-button-number');
+
+  container.classList.remove('light-theme');
+  lower.classList.remove('light-theme-lower');
+  number.forEach(num => {
+    num.classList.remove('light-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.remove('light-theme-button-operator');
+  });
+
+  clear.classList.remove('dark-theme-button-operator');
+  reset.classList.remove('dark-theme-button-operator');
+  negative.classList.remove('dark-theme-button-number');
+  dot.classList.remove('dark-theme-button-number');
+
+  container.classList.remove('dark-theme');
+  lower.classList.remove('dark-theme-lower');
+  number.forEach(num => {
+    num.classList.remove('dark-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.remove('dark-theme-button-operator');
+  });
+
+});
 
 
-  container.classList.toggle('light-theme')
-  lower.classList.toggle('light-theme')
-  number.forEach((num)=>{
-    num.classList.toggle('light-theme-button-number')
-  })
-  operator.forEach((num)=>{
-    num.classList.toggle('light-theme-button-operator')
-  })
-
-})
-
-theme2.addEventListener('click',()=>{
-  clear.classList.toggle('dark-theme-button-operator')
-  reset.classList.toggle('dark-theme-button-operator')
-  negative.classList.toggle('dark-theme-button-operator')
-  dot.classList.toggle('dark-theme-button-operator')
-
-  container.classList.toggle('dark-theme')
-  lower.classList.toggle('dark-theme')
-  number.forEach((num)=>{
-    num.classList.toggle('dark-theme-button-number')
-  })
-  operator.forEach((num)=>{
-    num.classList.toggle('dark-theme-button-operator')
-  })
-
-})
-
-theme3.addEventListener('click',()=>{
-
-  clear.classList.toggle('pastel-theme')
-  reset.classList.toggle('pastel-theme')
-  negative.classList.toggle('pastel-theme-button-number')
-  dot.classList.toggle('pastel-theme-button-number')
 
 
-  container.classList.toggle('pastel-theme')
-  lower.classList.toggle('pastel-theme-lower')
-  number.forEach((num)=>{
-    num.classList.toggle('pastel-theme-button-number')
-  })
-  operator.forEach((num)=>{
-    num.classList.toggle('pastel-theme-button-operator')
-  })
+theme4.addEventListener('click', () => {
+  clear.classList.toggle('bright-theme-button-operator');
+  reset.classList.toggle('bright-theme-button-operator');
+  negative.classList.toggle('bright-theme-button-number');
+  dot.classList.toggle('bright-theme-button-number');
 
-})
+  container.classList.toggle('bright-theme');
+  lower.classList.toggle('bright-theme-lower');
+  number.forEach(num => {
+    num.classList.toggle('bright-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.toggle('bright-theme-button-operator');
+  });
 
-theme4.addEventListener('click',()=>{
-  
-  clear.classList.toggle('bright-theme-button-operator')
-  reset.classList.toggle('bright-theme')
-  negative.classList.toggle('bright-theme-button-number')
-  dot.classList.toggle('bright-theme-button-number')
+  clear.classList.remove('pastel-theme-button-operator');
+  reset.classList.remove('pastel-theme-button-operator');
+  negative.classList.remove('pastel-theme-button-number');
+  dot.classList.remove('pastel-theme-button-number');
 
+  container.classList.remove('pastel-theme');
+  lower.classList.remove('pastel-theme-lower');
+  number.forEach(num => {
+    num.classList.remove('pastel-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.remove('pastel-theme-button-operator');
+  });
 
-  container.classList.toggle('bright-theme')
-  lower.classList.toggle('bright-theme-lower')
-  number.forEach((num)=>{
-    num.classList.toggle('bright-theme-button-number')
-  })
-  operator.forEach((num)=>{
-    num.classList.toggle('bright-theme-button-operator')
-  })
+  clear.classList.remove('light-theme-button-operator');
+  reset.classList.remove('light-theme-button-operator');
+  negative.classList.remove('light-theme-button-number');
+  dot.classList.remove('light-theme-button-number');
 
-})
+  container.classList.remove('light-theme');
+  lower.classList.remove('light-theme-lower');
+  number.forEach(num => {
+    num.classList.remove('light-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.remove('light-theme-button-operator');
+  });
+
+  clear.classList.remove('dark-theme-button-operator');
+  reset.classList.remove('dark-theme-button-operator');
+  negative.classList.remove('dark-theme-button-number');
+  dot.classList.remove('dark-theme-button-number');
+
+  container.classList.remove('dark-theme');
+  lower.classList.remove('dark-theme-lower');
+  number.forEach(num => {
+    num.classList.remove('dark-theme-button-number');
+  });
+  operator.forEach(num => {
+    num.classList.remove('dark-theme-button-operator');
+  });
+});
