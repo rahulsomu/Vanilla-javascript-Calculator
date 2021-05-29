@@ -356,7 +356,7 @@ button:hover::before{
     height: 10%;
     width: 100%;
     top: 0;
-    background-color: #ffffff15;
+    background-color: #0000000c;
     transform: rotate(0deg) translate(0, 0);
     /* transform: rotate(-30deg) translate(-120px, -230px); */
   }
