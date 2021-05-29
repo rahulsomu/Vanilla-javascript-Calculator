@@ -13,6 +13,7 @@ const theme3 = document.querySelector('.theme3');
 const theme4 = document.querySelector('.theme4');
 const container = document.querySelector('.container');
 const lower = document.querySelector('.lower');
+const themeBtn = document.querySelector('.theme-btn');
 
 
 
@@ -125,7 +126,9 @@ dot.addEventListener('click', () => {
 });
 
 close.addEventListener('click',()=>{
-  theme.classList.toggle('close-transform')
+  theme.classList.toggle('close-transform');
+  themeBtn.classList.toggle('hide');
+
 })
 
 theme1.addEventListener('click',()=>{

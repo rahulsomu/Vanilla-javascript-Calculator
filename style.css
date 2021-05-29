@@ -37,7 +37,7 @@ body {
 .theme {
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.411);
+  background-color: rgba(255, 255, 255, 0.199);
   transition: 0.2s ease;
   transform: rotate(-30deg) translate(-110px, -220px);
   
@@ -50,10 +50,11 @@ body {
   bottom: 30px;
   left: 40%;
   transform: translateX(-80%) rotate(30deg);
+  /* background-color: #2ec4b6; */
   width: 5rem;
   height: 5rem;
   font-size: 10px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,10 +200,10 @@ button {
 button:hover::before{
     transform: translateY(0);
 } */
-button:hover {
+/* button:hover {
   background: #f6f7f8da;
   color: #011627;
-}
+} */
 .botton-rectangle {
   width: 20%;
   border-radius: 20px;
@@ -318,6 +319,24 @@ button:hover {
     height: 100vh;
     box-shadow: none;
   }
+  .upper{
+    border-radius: 0px;
+  }
+  .theme1,
+.theme2,
+.theme3,
+.theme4 {
+  height: 2.8rem;
+  margin: 5px;
+  width: 2.8rem;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 600;
+}
   .lower {
     border-radius: 0;
     border-top-left-radius: 30px;
@@ -327,27 +346,50 @@ button:hover {
     display: none;
   }
   .close {
-    transform: translateX(-45%) rotate(80deg);
+    transform: translateX(-50%) rotate(90deg);
     bottom: -15px;
     width: 1.5rem;
     height: 1.5rem;
+    background-color: #2ec4b6;
   }
   .theme {
-    height: 100%;
-    width: 120%;
-    transform: rotate(-30deg) translate(-120px, -230px);
+    height: 50%;
+    width: 100%;
+    top: 0;
+    background-color: #ffffff2a;
+    transform: rotate(0deg) translate(0 , 0);
+    /* transform: rotate(-30deg) translate(-120px, -230px); */
     
-   
-    top: -40px;
-    left: -40px;
+  }
+  .theme-btn{
+    transform: translateX(0) rotate(0deg);
+    top: 0;
+  left: 0;
+  background-color: #ffffff1e;
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+
   }
   .close-transform {
-    transform: rotate(-30deg) translate(-30px, -100px);
+    transform: rotate(0deg) translate(0px, 0px);
+    height: 10%;
   }
-  button:hover {
+  .hide{
+    display: none;
+  }
+  /* button:hover {
     background: none;
     color: none;
-  }
+  } */
 }
 
 @media (max-width: 375px) {
@@ -360,7 +402,7 @@ button:hover {
     height: 3.5rem;
     font-size: 18px;
   }
-  .close {
+  /* .close {
     width: 1.5rem;
     height: 1.5rem;
     transform: translateX(-20%) rotate(80deg);
@@ -373,11 +415,9 @@ button:hover {
     transform: rotate(-30deg) translate(-110px, -240px);
   
    
-    top: -20px;
-    left: -40px;
   }
 
   .close-transform {
     transform: rotate(-30deg) translate(-20px, -120px);
-  }
+  } */
 }
