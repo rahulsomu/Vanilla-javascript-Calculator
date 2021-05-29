@@ -39,8 +39,8 @@ body {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.411);
   transition: 0.2s ease;
-
-  transform: rotate(-30deg) translate(-20px, -100px);
+  transform: rotate(-30deg) translate(-115px, -225px);
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -231,7 +231,7 @@ button:hover {
   color: #f6f7f8;
 }
 .close-transform {
-  transform: rotate(-30deg) translate(-115px, -225px);
+  transform: rotate(-30deg) translate(-20px, -100px);
 }
 
 /* ************************themes****************************** */
@@ -316,6 +316,7 @@ button:hover {
   .container {
     border-radius: 0;
     width: 100%;
+    height: 100vh;
     box-shadow: none;
   }
   .lower {
@@ -327,7 +328,16 @@ button:hover {
     display: none;
   }
   .close {
-    transform: translateX(-70%) rotate(80deg);
+    transform: translateX(-80%) rotate(80deg);
+  }
+  .theme {
+    height: 100%;
+    width: 120%;
+   
+    
+   
+    top: -40px;
+    left: -40px;
   }
 }
 
@@ -346,5 +356,14 @@ button:hover {
     height: 1.5rem;
     transform: translateX(-20%) rotate(80deg);
     bottom: -15px;
+  }
+  .theme {
+    height: 100%;
+    width: 120%;
+   
+    
+   
+    top: -20px;
+    left: -40px;
   }
 }
