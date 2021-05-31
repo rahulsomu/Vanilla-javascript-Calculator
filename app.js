@@ -14,6 +14,7 @@ const theme4 = document.querySelector('.theme4');
 const container = document.querySelector('.container');
 const lower = document.querySelector('.lower');
 const themeBtn = document.querySelector('.theme-btn');
+const body = document.querySelector('body');
 
 let currentArray = '';
 let array = '';
@@ -27,6 +28,12 @@ number.forEach(number => {
     result.style.transform = 'translateX(0)';
     current.style.transition = '0s';
     current.style.transform = 'translateX(0)';
+    current.style.color = '#2EC4B6';
+    current.style.fontSize = '30px';
+    result.style.fontSize = '18px';
+    current.style.transition = '.2s';
+
+    result.style.transition = '.2s';
     array = currentArray.concat(number.textContent);
     currentArray = array;
 
@@ -34,7 +41,7 @@ number.forEach(number => {
     if (
       array[array.length - 1] !== '/' &&
       array[array.length - 1] !== '*' &&
-      array[array.length - 1] !== '-' &&
+      array[array.length - 1] !== '-' && //to show the answer in real time if the last element is a number
       array[array.length - 1] !== '+' &&
       array[array.length - 1] !== '%'
     ) {
@@ -46,7 +53,15 @@ number.forEach(number => {
 const operator = document.querySelectorAll('.operator');
 operator.forEach(operator => {
   operator.addEventListener('click', () => {
-    if (array !== '') {
+    if (
+      array !== '' &&
+      currentArray !== '' &&
+      array.slice(-1) !== '-' &&
+      array.slice(-1) !== '+' && //to ensure that no two opearators can be typed together
+      array.slice(-1) !== '%' &&
+      array.slice(-1) !== '/' &&
+      array.slice(-1) !== '*'
+    ) {
       current.textContent = '';
       result.textContent = '';
       result.style.transition = '0s';
@@ -62,9 +77,15 @@ operator.forEach(operator => {
 });
 
 equals.addEventListener('click', () => {
-  result.textContent = eval(array);
+  // result.textContent = eval(array);
+  // currentArray = '';
   currentArray = '';
   current.style.color = 'gray';
+  current.style.fontSize = '18px';
+  current.style.transition = '.5s';
+  result.style.fontSize = '40px';
+  result.style.transition = '.5s';
+
   //   current.textContent = '';
 });
 clear.addEventListener('click', () => {
@@ -81,6 +102,9 @@ clear.addEventListener('click', () => {
   currentArray = array;
   current.textContent = array;
   current.style.color = '#2EC4B6';
+  current.style.fontSize = '30px';
+
+  result.style.fontSize = '18px';
 });
 
 reset.addEventListener('click', () => {
@@ -88,9 +112,14 @@ reset.addEventListener('click', () => {
   currentArray = '';
 
   current.style.color = '#2EC4B6';
-  current.style.transition = '1s';
+
+  current.style.transition = '.5s';
   current.style.transform = 'translateX(1000px)';
-  result.style.transition = '1s';
+  current.style.fontSize = '30px';
+  current.style.transition = '0s';
+  result.style.fontSize = '18px';
+  result.style.transition = '0s';
+  result.style.transition = '.5s';
   result.style.transform = 'translateX(1000px)';
 });
 
@@ -123,11 +152,13 @@ dot.addEventListener('click', () => {
 });
 
 close.addEventListener('click', () => {
+  close.classList.toggle('close-icon-transform');
   theme.classList.toggle('close-transform');
   themeBtn.classList.toggle('hide');
 });
 
 theme1.addEventListener('click', () => {
+  body.style.backgroundColor = '#d4e8fc';
   clear.classList.toggle('light-theme-button-operator');
   reset.classList.toggle('light-theme-button-operator');
   negative.classList.toggle('light-theme-button-number');
@@ -183,10 +214,10 @@ theme1.addEventListener('click', () => {
   operator.forEach(num => {
     num.classList.remove('dark-theme-button-operator');
   });
-
 });
 
 theme2.addEventListener('click', () => {
+  body.style.backgroundColor = '#2f404e';
   clear.classList.toggle('dark-theme-button-operator');
   reset.classList.toggle('dark-theme-button-operator');
   negative.classList.toggle('dark-theme-button-number');
@@ -242,10 +273,10 @@ theme2.addEventListener('click', () => {
   operator.forEach(num => {
     num.classList.remove('bright-theme-button-operator');
   });
-
 });
 
 theme3.addEventListener('click', () => {
+  body.style.backgroundColor = '#e4fcc9';
   clear.classList.toggle('pastel-theme-button-operator');
   reset.classList.toggle('pastel-theme-button-operator');
   negative.classList.toggle('pastel-theme-button-number');
@@ -301,13 +332,10 @@ theme3.addEventListener('click', () => {
   operator.forEach(num => {
     num.classList.remove('dark-theme-button-operator');
   });
-
 });
 
-
-
-
 theme4.addEventListener('click', () => {
+  body.style.backgroundColor = '#fddbbb';
   clear.classList.toggle('bright-theme-button-operator');
   reset.classList.toggle('bright-theme-button-operator');
   negative.classList.toggle('bright-theme-button-number');
