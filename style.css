@@ -75,6 +75,7 @@ body {
   text-transform: capitalize;
   font-size: 8px;
   font-weight: 400;
+  cursor: pointer;
 }
 .theme1 {
   background: #f6f7f8;
@@ -109,6 +110,7 @@ body {
   font-size: 20px;
   color: #f6f7f8;
   font-weight: bold;
+  cursor: pointer;
 }
 .screen {
   width: 100%;
@@ -337,7 +339,7 @@ background: linear-gradient(180deg, #f6f7f8 0%, #b0f3f1 74%);
   }
   .close {
     transform: translateX(-50%) rotate(90deg);
-    bottom: -20px;
+    bottom: -10px;
     right: 50%;
     width: 1.8rem;
     height: 1.8rem;
