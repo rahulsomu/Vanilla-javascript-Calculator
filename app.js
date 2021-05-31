@@ -158,7 +158,11 @@ close.addEventListener('click', () => {
 });
 
 theme1.addEventListener('click', () => {
-  body.style.backgroundColor = '#d4e8fc';
+  body.style.background = 'linear-gradient(180deg, #f6f7f8 80%, #b0f3f1 100%)';
+  equals.classList.toggle('light-theme-equals')
+  equals.classList.remove('dark-theme-equals')
+  equals.classList.remove('pastel-theme-equals')
+  equals.classList.remove('bright-theme-equals')
   clear.classList.toggle('light-theme-button-operator');
   reset.classList.toggle('light-theme-button-operator');
   negative.classList.toggle('light-theme-button-number');
@@ -217,7 +221,11 @@ theme1.addEventListener('click', () => {
 });
 
 theme2.addEventListener('click', () => {
-  body.style.backgroundColor = '#2f404e';
+  body.style.background = 'linear-gradient(0deg, #111111 0%, #706f6f 100%)';
+  equals.classList.toggle('dark-theme-equals')
+  equals.classList.remove('light-theme-equals')
+  equals.classList.remove('pastel-theme-equals')
+  equals.classList.remove('bright-theme-equals')
   clear.classList.toggle('dark-theme-button-operator');
   reset.classList.toggle('dark-theme-button-operator');
   negative.classList.toggle('dark-theme-button-number');
@@ -276,7 +284,11 @@ theme2.addEventListener('click', () => {
 });
 
 theme3.addEventListener('click', () => {
-  body.style.backgroundColor = '#e4fcc9';
+  body.style.background = 'linear-gradient(180deg, #a2f8e7 100%, #19a180 74%)';
+  equals.classList.toggle('pastel-theme-equals')
+  equals.classList.remove('dark-theme-equals')
+  equals.classList.remove('light-theme-equals')
+  equals.classList.remove('bright-theme-equals')
   clear.classList.toggle('pastel-theme-button-operator');
   reset.classList.toggle('pastel-theme-button-operator');
   negative.classList.toggle('pastel-theme-button-number');
@@ -335,7 +347,11 @@ theme3.addEventListener('click', () => {
 });
 
 theme4.addEventListener('click', () => {
-  body.style.backgroundColor = '#fddbbb';
+  body.style.background = '#fddbbb';
+  equals.classList.toggle('bright-theme-equals')
+  equals.classList.remove('dark-theme-equals')
+  equals.classList.remove('pastel-theme-equals')
+  equals.classList.remove('light-theme-equals')
   clear.classList.toggle('bright-theme-button-operator');
   reset.classList.toggle('bright-theme-button-operator');
   negative.classList.toggle('bright-theme-button-number');
